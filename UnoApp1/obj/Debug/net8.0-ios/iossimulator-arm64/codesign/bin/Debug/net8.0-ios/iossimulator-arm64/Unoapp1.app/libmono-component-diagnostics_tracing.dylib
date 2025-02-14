@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - /Users/fl0/Desktop/UnoAppDemo/UnoApp1/bin/Debug/net8.0-ios/iossimulator-arm64/Unoapp1.app/libmono-component-diagnostics_tracing.dylib

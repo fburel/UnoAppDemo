@@ -1,0 +1,44 @@
+<Page xmlns:utu="using:Uno.Toolkit.UI" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      x:Class="UnoApp1.Pages.Registration.RegisterHomePage" mc:Ignorable="d" Background="{ThemeResource BackgroundBrush}" NavigationCacheMode="Required" utu:StatusBar.Foreground="Light" utu:StatusBar.Background="{ThemeResource SurfaceBrush}" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:system="clr-namespace:System;assembly=System.Runtime">
+  <Page.Resources>
+    <system:String x:Key="Icon_Format_ArrowLeft_Weight_Bold">F1 M 18.750886917114258 7.876013994245301 C 18.750886917114258 8.17438253605136 18.63235989958048 8.460530106941023 18.42138147354126 8.671508526594375 C 18.21040304750204 8.882486946247726 17.924255467951298 9.001013960193944 17.625886917114258 9.001013960193944 L 3.844636917114258 9.001013960193944 L 8.674636602401733 13.83007579904438 C 8.885980993509293 14.041420183754994 9.00471353530884 14.328064678553108 9.004713535308838 14.626950774924667 C 9.004713535308838 14.925836871296227 8.885980993509293 15.212481366094343 8.674636602401733 15.423825750804957 C 8.463292211294174 15.63517013551557 8.176647707819939 15.75390338897705 7.877761602401733 15.75390338897705 C 7.578875496983528 15.75390338897705 7.292230993509293 15.63517013551557 7.080886602401733 15.423825750804957 L 0.3308871388435364 8.673825955113099 C 0.22600720077753067 8.569309560114938 0.14279055409133434 8.445117486207447 0.08600950241088867 8.308371769244689 C 0.029228450730443 8.17162605228193 0 8.025016769010483 0 7.876950979232809 C -3.3306690738754696e-16 7.728885189455136 0.029228450730443 7.58227590618369 0.08600950241088867 7.445530189220931 C 0.14279055409133434 7.308784472258172 0.22600720077753067 7.184592398350682 0.3308871388435364 7.080076003352521 L 7.080886602401733 0.3300762076606622 C 7.1855337135493755 0.2254290996804655 7.309767968952656 0.14241844357123357 7.44649600982666 0.0857838366292747 C 7.5832240507006645 0.02914922968731585 7.729768227785826 0 7.877761602401733 0 C 8.025754977017641 6.6613379461264035e-16 8.17229986935854 0.02914922968731585 8.309027910232544 0.0857838366292747 C 8.445755951106548 0.14241844357123357 8.569989491254091 0.2254290996804655 8.674636602401733 0.3300762076606622 C 8.779283713549376 0.43472331564085887 8.862294729799032 0.5589575672838325 8.9189293384552 0.69568560401937 C 8.975563947111368 0.8324136407549074 9.004713535308838 0.9789578134044881 9.004713535308838 1.1269511835409511 C 9.004713535308838 1.2749445536774142 8.975563947111368 1.4214890839548526 8.9189293384552 1.55821712069039 C 8.862294729799032 1.6949451574259276 8.779283713549376 1.819179409068901 8.674636602401733 1.9238265170490978 L 3.844636917114258 6.751014028296658 L 17.625886917114258 6.751014028296658 C 17.924255467951298 6.751014028296659 18.21040304750204 6.869539611731445 18.42138147354126 7.080518031384796 C 18.63235989958048 7.291496451038147 18.750886917114258 7.577645452439242 18.750886917114258 7.876013994245301 Z</system:String>
+  </Page.Resources>
+  <utu:AutoLayout Background="{ThemeResource BackgroundBrush}" CounterAxisAlignment="Start">
+    <utu:AutoLayout utu:AutoLayout.CounterAlignment="Stretch" utu:AutoLayout.PrimaryAlignment="Stretch">
+      <utu:NavigationBar HorizontalContentAlignment="Left" Content="Configuration du domicile" HorizontalAlignment="Stretch">
+        <utu:NavigationBar.MainCommand>
+          <AppBarButton>
+            <AppBarButton.Icon>
+              <PathIcon Data="{StaticResource Icon_Format_ArrowLeft_Weight_Bold}" Foreground="{ThemeResource OnSurfaceBrush}" />
+            </AppBarButton.Icon>
+          </AppBarButton>
+        </utu:NavigationBar.MainCommand>
+      </utu:NavigationBar>
+      <ScrollViewer utu:AutoLayout.PrimaryAlignment="Stretch">
+        <utu:AutoLayout Spacing="24" Padding="15,8">
+          <ProgressBar />
+          <utu:AutoLayout Spacing="4" CounterAxisAlignment="Start">
+            <TextBlock Text="Nom du domicile" Foreground="{ThemeResource OnSurfaceBrush}" />
+            <TextBox utu:AutoLayout.CounterAlignment="Stretch" Height="40" BorderBrush="{ThemeResource OutlineVariantBrush}" />
+          </utu:AutoLayout>
+          <utu:AutoLayout Spacing="4" CounterAxisAlignment="Start">
+            <TextBlock Text="Adresse postale" Foreground="{ThemeResource OnSurfaceBrush}" />
+            <TextBox utu:AutoLayout.CounterAlignment="Stretch" Height="40" BorderBrush="{ThemeResource OutlineVariantBrush}" />
+          </utu:AutoLayout>
+          <utu:AutoLayout Spacing="4" CounterAxisAlignment="Start">
+            <TextBlock Text="Code postal" Foreground="{ThemeResource OnSurfaceBrush}" />
+            <TextBox utu:AutoLayout.CounterAlignment="Stretch" Height="40" BorderBrush="{ThemeResource OutlineVariantBrush}" />
+          </utu:AutoLayout>
+          <utu:AutoLayout Spacing="4" CounterAxisAlignment="Start">
+            <TextBlock Text="Ville" Foreground="{ThemeResource OnSurfaceBrush}" />
+            <TextBox utu:AutoLayout.CounterAlignment="Stretch" Height="40" BorderBrush="{ThemeResource OutlineVariantBrush}" />
+          </utu:AutoLayout>
+          <utu:AutoLayout CornerRadius="8" PrimaryAxisAlignment="End" CounterAxisAlignment="End" Padding="0,8" utu:AutoLayout.PrimaryAlignment="Stretch">
+            <Button Content="Suivant" utu:AutoLayout.CounterAlignment="Stretch" CornerRadius="8" />
+          </utu:AutoLayout>
+        </utu:AutoLayout>
+      </ScrollViewer>
+    </utu:AutoLayout>
+  </utu:AutoLayout>
+</Page>

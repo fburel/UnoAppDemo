@@ -1,0 +1,121 @@
+﻿<ResourceDictionary xmlns:uen="using:Uno.Extensions.Navigation.UI" xmlns:uer="using:Uno.Extensions.Reactive.UI" xmlns:utu="using:Uno.Toolkit.UI" xmlns:utum="using:Uno.Toolkit.UI.Material" xmlns:muxc="using:Microsoft.UI.Xaml.Controls" xmlns:um="using:Uno.Material" xmlns:ut="using:Uno.Themes" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+  <!--Themed colors-->
+  <ResourceDictionary.ThemeDictionaries>
+    <ResourceDictionary x:Key="Light">
+      <Color x:Key="StatusBarForegroundColor">#000000</Color>
+      <Color x:Key="SurfaceColor">#FFFFFF</Color>
+      <Color x:Key="OnSurfaceColor">#0B0402</Color>
+      <Color x:Key="OnSurfaceVariantColor">#806F6B</Color>
+      <Color x:Key="TertiaryColor">#668AD2</Color>
+      <Color x:Key="OnPrimaryColor">#FFFFFF</Color>
+      <Color x:Key="PrimaryColor">#F06837</Color>
+      <Color x:Key="OutlineVariantColor">#DBD3D1</Color>
+      <Color x:Key="OnBackgroundColor">#0B0402</Color>
+      <Color x:Key="BackgroundColor">#FCFBFA</Color>
+      <Color x:Key="PrimaryInverseColor">#FFD0BF</Color>
+      <Color x:Key="PrimaryContainerColor">#FFF0EB</Color>
+      <Color x:Key="OnPrimaryContainerColor">#681D02</Color>
+      <Color x:Key="PrimaryVariantLightColor">#F06837</Color>
+      <Color x:Key="PrimaryVariantDarkColor">#0021C1</Color>
+      <Color x:Key="SecondaryColor">#B78D47</Color>
+      <Color x:Key="SecondaryVariantLightColor">#F2C06E</Color>
+      <Color x:Key="SecondaryVariantDarkColor">#3B2574</Color>
+      <Color x:Key="OnSecondaryColor">#FFFFFF</Color>
+      <Color x:Key="SecondaryContainerColor">#FFF9F1</Color>
+      <Color x:Key="OnSecondaryContainerColor">#7D5D28</Color>
+      <Color x:Key="SurfaceInverseColor">#271611</Color>
+      <Color x:Key="SurfaceTintColor">#F06837</Color>
+      <Color x:Key="OnSurfaceInverseColor">#FBF9F9</Color>
+      <Color x:Key="SurfaceVariantColor">#F6F4F3</Color>
+      <Color x:Key="OnSurfaceVariant02Color">#B0A09C</Color>
+      <Color x:Key="OutlineColor">#63504B</Color>
+      <Color x:Key="ErrorColor">#B91C1C</Color>
+      <Color x:Key="OnErrorColor">#FFFFFF</Color>
+      <Color x:Key="ErrorContainerColor">#FEE2E2</Color>
+      <Color x:Key="OnErrorContainerColor">#450303</Color>
+      <Color x:Key="OnTertiaryColor">#FFFFFF</Color>
+      <Color x:Key="TertiaryContainerColor">#CDDEFF</Color>
+      <Color x:Key="OnTertiaryContainerColor">#23365D</Color>
+      <Color x:Key="WarningColor">#92400E</Color>
+      <Color x:Key="WarningVariantColor">#F59E0B</Color>
+      <Color x:Key="OnWarningColor">#FFFFFF</Color>
+      <Color x:Key="WarningContainerColor">#FEF3C7</Color>
+      <Color x:Key="OnWarningContainerColor">#523300</Color>
+      <Color x:Key="SuccessColor">#15803D</Color>
+      <Color x:Key="OnSuccessColor">#FFFFFF</Color>
+      <Color x:Key="SuccessContainerColor">#DCFCE7</Color>
+      <Color x:Key="OnSuccessContainerColor">#14532D</Color>
+      <Color x:Key="StopColor">#DC2626</Color>
+      <Color x:Key="ManuelColor">#7ED571</Color>
+      <Color x:Key="FrostFreeColor">#7BA2EF</Color>
+      <Color x:Key="ProgColor">#A66FE3</Color>
+      <!--Themed Custom colors brushes-->
+      <SolidColorBrush x:Key="StatusBarForegroundBrush" Color="{StaticResource StatusBarForegroundColor}" />
+      <SolidColorBrush x:Key="OnSurfaceVariant02Brush" Color="{StaticResource OnSurfaceVariant02Color}" />
+      <SolidColorBrush x:Key="WarningBrush" Color="{StaticResource WarningColor}" />
+      <SolidColorBrush x:Key="WarningVariantBrush" Color="{StaticResource WarningVariantColor}" />
+      <SolidColorBrush x:Key="OnWarningBrush" Color="{StaticResource OnWarningColor}" />
+      <SolidColorBrush x:Key="WarningContainerBrush" Color="{StaticResource WarningContainerColor}" />
+      <SolidColorBrush x:Key="OnWarningContainerBrush" Color="{StaticResource OnWarningContainerColor}" />
+      <SolidColorBrush x:Key="SuccessBrush" Color="{StaticResource SuccessColor}" />
+      <SolidColorBrush x:Key="OnSuccessBrush" Color="{StaticResource OnSuccessColor}" />
+      <SolidColorBrush x:Key="SuccessContainerBrush" Color="{StaticResource SuccessContainerColor}" />
+      <SolidColorBrush x:Key="OnSuccessContainerBrush" Color="{StaticResource OnSuccessContainerColor}" />
+      <SolidColorBrush x:Key="StopBrush" Color="{StaticResource StopColor}" />
+      <SolidColorBrush x:Key="ManuelBrush" Color="{StaticResource ManuelColor}" />
+      <SolidColorBrush x:Key="FrostFreeBrush" Color="{StaticResource FrostFreeColor}" />
+      <SolidColorBrush x:Key="ProgBrush" Color="{StaticResource ProgColor}" />
+    </ResourceDictionary>
+    <ResourceDictionary x:Key="Dark">
+      <Color x:Key="PrimaryColor">#C7BFFF</Color>
+      <Color x:Key="PrimaryInverseColor">#2A009F</Color>
+      <Color x:Key="OnPrimaryColor">#2A009F</Color>
+      <Color x:Key="PrimaryContainerColor">#4129BA</Color>
+      <Color x:Key="OnPrimaryContainerColor">#E4DFFF</Color>
+      <Color x:Key="PrimaryVariantLightColor">#C8BFFF</Color>
+      <Color x:Key="PrimaryVariantDarkColor">#4128BA</Color>
+      <Color x:Key="SecondaryColor">#CDC2DC</Color>
+      <Color x:Key="SecondaryVariantLightColor">#EBE6F1</Color>
+      <Color x:Key="SecondaryVariantDarkColor">#441F8A</Color>
+      <Color x:Key="OnSecondaryColor">#332D41</Color>
+      <Color x:Key="SecondaryContainerColor">#433C52</Color>
+      <Color x:Key="OnSecondaryContainerColor">#EDDFFF</Color>
+      <Color x:Key="BackgroundColor">#1C1B1F</Color>
+      <Color x:Key="OnBackgroundColor">#E5E1E6</Color>
+      <Color x:Key="SurfaceColor">#302D37</Color>
+      <Color x:Key="SurfaceInverseColor">#E6E1E5</Color>
+      <Color x:Key="SurfaceTintColor">#C7BFFF</Color>
+      <Color x:Key="SurfaceVariantColor">#47464F</Color>
+      <Color x:Key="OnSurfaceColor">#E6E1E5</Color>
+      <Color x:Key="OnSurfaceInverseColor">#1C1B1F</Color>
+      <Color x:Key="OnSurfaceVariantColor">#C9C5D0</Color>
+      <Color x:Key="OutlineColor">#928F99</Color>
+      <Color x:Key="OutlineVariantColor">#57545D</Color>
+      <Color x:Key="ErrorColor">#FFB4AB</Color>
+      <Color x:Key="OnErrorColor">#690005</Color>
+      <Color x:Key="ErrorContainerColor">#93000A</Color>
+      <Color x:Key="OnErrorContainerColor">#FFDAD6</Color>
+      <Color x:Key="TertiaryColor">#9FCAFF</Color>
+      <Color x:Key="OnTertiaryColor">#003258</Color>
+      <Color x:Key="TertiaryContainerColor">#00497D</Color>
+      <Color x:Key="OnTertiaryContainerColor">#D1E4FF</Color>
+      <Color x:Key="StatusBarForegroundColor">#FFFFFF</Color>
+      <!--Themed Custom colors brushes-->
+      <SolidColorBrush x:Key="StatusBarForegroundBrush" Color="{StaticResource StatusBarForegroundColor}" />
+      <SolidColorBrush x:Key="OnSurfaceVariant02Brush" Color="{StaticResource OnSurfaceVariant02Color}" />
+      <SolidColorBrush x:Key="WarningBrush" Color="{StaticResource WarningColor}" />
+      <SolidColorBrush x:Key="WarningVariantBrush" Color="{StaticResource WarningVariantColor}" />
+      <SolidColorBrush x:Key="OnWarningBrush" Color="{StaticResource OnWarningColor}" />
+      <SolidColorBrush x:Key="WarningContainerBrush" Color="{StaticResource WarningContainerColor}" />
+      <SolidColorBrush x:Key="OnWarningContainerBrush" Color="{StaticResource OnWarningContainerColor}" />
+      <SolidColorBrush x:Key="SuccessBrush" Color="{StaticResource SuccessColor}" />
+      <SolidColorBrush x:Key="OnSuccessBrush" Color="{StaticResource OnSuccessColor}" />
+      <SolidColorBrush x:Key="SuccessContainerBrush" Color="{StaticResource SuccessContainerColor}" />
+      <SolidColorBrush x:Key="OnSuccessContainerBrush" Color="{StaticResource OnSuccessContainerColor}" />
+      <SolidColorBrush x:Key="StopBrush" Color="{StaticResource StopColor}" />
+      <SolidColorBrush x:Key="ManuelBrush" Color="{StaticResource ManuelColor}" />
+      <SolidColorBrush x:Key="FrostFreeBrush" Color="{StaticResource FrostFreeColor}" />
+      <SolidColorBrush x:Key="ProgBrush" Color="{StaticResource ProgColor}" />
+    </ResourceDictionary>
+  </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>

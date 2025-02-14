@@ -1,0 +1,83 @@
+﻿<ResourceDictionary xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:system="clr-namespace:System;assembly=System.Runtime">
+  <!--ThemeResources-->
+  <system:String x:Key="BodySmallFontWeight">Medium</system:String>
+  <system:String x:Key="TitleMediumFontWeight">Bold</system:String>
+  <system:String x:Key="HeadlineExtraSmallFontWeight">Normal</system:String>
+  <system:String x:Key="BodyMediumFontWeight">Medium</system:String>
+  <system:String x:Key="LabelLargeFontWeight">Medium</system:String>
+  <system:String x:Key="HeadlineLargeFontWeight">Thin</system:String>
+  <system:String x:Key="HeadlineMediumFontWeight">Thin</system:String>
+  <system:String x:Key="HeadlineSmallFontWeight">Normal</system:String>
+  <system:String x:Key="LabelExtraSmallFontWeight">Normal</system:String>
+  <system:Double x:Key="LabelExtraSmallFontSize">10</system:Double>
+  <system:String x:Key="BodyLargeFontWeight">Medium</system:String>
+  <system:String x:Key="FigmaCoverHeadlineFontWeight">Thin</system:String>
+  <system:String x:Key="FigmaHeaderOverlineFontWeight">Thin</system:String>
+  <system:String x:Key="FigmaHeaderTitleFontWeight">Thin</system:String>
+  <!--Font Families-->
+  <FontFamily x:Key="BodySmallFontFamily">Mulish</FontFamily>
+  <!--The font Mulish has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Mulish -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/mulish/v13/1Ptvg83HX_SGhgqU2AAsQqB3BA.ttf -->
+  <FontFamily x:Key="TitleMediumFontFamily">Mulish</FontFamily>
+  <!--The font Mulish has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Mulish -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/mulish/v13/1Ptvg83HX_SGhgqU2AAsQqB3BA.ttf -->
+  <FontFamily x:Key="HeadlineExtraSmallFontFamily">Montserrat</FontFamily>
+  <!--The font Montserrat has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Montserrat -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/montserrat/v29/JTUSjIg1_i6t8kCHKm45xW5rygbi49c.ttf -->
+  <FontFamily x:Key="BodyMediumFontFamily">Mulish</FontFamily>
+  <!--The font Mulish has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Mulish -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/mulish/v13/1Ptvg83HX_SGhgqU2AAsQqB3BA.ttf -->
+  <FontFamily x:Key="LabelLargeFontFamily">Mulish</FontFamily>
+  <!--The font Mulish has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Mulish -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/mulish/v13/1Ptvg83HX_SGhgqU2AAsQqB3BA.ttf -->
+  <FontFamily x:Key="DisplayLargeFontFamily">Cabin</FontFamily>
+  <!--The font Cabin has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Cabin -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/cabin/v27/u-4x0qWljRw-Pe839fxqmjRv.ttf -->
+  <FontFamily x:Key="DisplayMediumFontFamily">Cabin</FontFamily>
+  <!--The font Cabin has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Cabin -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/cabin/v27/u-4x0qWljRw-Pe839fxqmjRv.ttf -->
+  <FontFamily x:Key="DisplaySmallFontFamily">Cabin</FontFamily>
+  <!--The font Cabin has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Cabin -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/cabin/v27/u-4x0qWljRw-Pe839fxqmjRv.ttf -->
+  <FontFamily x:Key="HeadlineLargeFontFamily">Montserrat</FontFamily>
+  <!--The font Montserrat has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Montserrat -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/montserrat/v29/JTUSjIg1_i6t8kCHKm45xW5rygbi49c.ttf -->
+  <FontFamily x:Key="HeadlineMediumFontFamily">Montserrat</FontFamily>
+  <!--The font Montserrat has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Montserrat -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/montserrat/v29/JTUSjIg1_i6t8kCHKm45xW5rygbi49c.ttf -->
+  <FontFamily x:Key="HeadlineSmallFontFamily">Montserrat</FontFamily>
+  <!--The font Montserrat has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Montserrat -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/montserrat/v29/JTUSjIg1_i6t8kCHKm45xW5rygbi49c.ttf -->
+  <FontFamily x:Key="TitleLargeFontFamily">Mulish</FontFamily>
+  <!--The font Mulish has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Mulish -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/mulish/v13/1Ptvg83HX_SGhgqU2AAsQqB3BA.ttf -->
+  <FontFamily x:Key="TitleSmallFontFamily">Mulish</FontFamily>
+  <!--The font Mulish has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Mulish -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/mulish/v13/1Ptvg83HX_SGhgqU2AAsQqB3BA.ttf -->
+  <FontFamily x:Key="LabelMediumFontFamily">Mulish</FontFamily>
+  <!--The font Mulish has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Mulish -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/mulish/v13/1Ptvg83HX_SGhgqU2AAsQqB3BA.ttf -->
+  <FontFamily x:Key="LabelSmallFontFamily">Mulish</FontFamily>
+  <!--The font Mulish has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Mulish -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/mulish/v13/1Ptvg83HX_SGhgqU2AAsQqB3BA.ttf -->
+  <FontFamily x:Key="LabelExtraSmallFontFamily">Mulish</FontFamily>
+  <!--The font Mulish has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Mulish -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/mulish/v13/1Ptvg83HX_SGhgqU2AAsQqB3BA.ttf -->
+  <FontFamily x:Key="LabelNanoFontFamily">Mulish</FontFamily>
+  <!--The font Mulish has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Mulish -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/mulish/v13/1Ptvg83HX_SGhgqU2AAsQqB3BA.ttf -->
+  <FontFamily x:Key="BodyLargeFontFamily">Mulish</FontFamily>
+  <!--The font Mulish has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Mulish -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/mulish/v13/1Ptvg83HX_SGhgqU2AAsQqB3BA.ttf -->
+  <FontFamily x:Key="CaptionLargeFontFamily">Mulish</FontFamily>
+  <!--The font Mulish has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Mulish -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/mulish/v13/1Ptvg83HX_SGhgqU2AAsQqB3BA.ttf -->
+  <FontFamily x:Key="CaptionMediumFontFamily">Mulish</FontFamily>
+  <!--The font Mulish has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Mulish -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/mulish/v13/1Ptvg83HX_SGhgqU2AAsQqB3BA.ttf -->
+  <FontFamily x:Key="CaptionSmallFontFamily">Mulish</FontFamily>
+  <!--The font Mulish has been found on Google Fonts at the following url: https://fonts.google.com/specimen/Mulish -->
+  <!--And its source can be downloaded directly from: https://fonts.gstatic.com/s/mulish/v13/1Ptvg83HX_SGhgqU2AAsQqB3BA.ttf -->
+</ResourceDictionary>

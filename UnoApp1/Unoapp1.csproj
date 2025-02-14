@@ -1,0 +1,58 @@
+<Project Sdk="Uno.Sdk">
+    <PropertyGroup>
+        <TargetFrameworks>net8.0-android;net8.0-ios;net8.0</TargetFrameworks>
+
+        <OutputType>Exe</OutputType>
+        <UnoSingleProject>true</UnoSingleProject>
+
+        <!-- Display name -->
+        <ApplicationTitle>UnoApp1</ApplicationTitle>
+        <!-- App Identifier -->
+        <ApplicationId>com.florianburel.testapp</ApplicationId>
+        <!-- Versions -->
+        <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+        <ApplicationVersion>1</ApplicationVersion>
+        <!-- Package Publisher -->
+        <ApplicationPublisher>O=UnoApp1</ApplicationPublisher>
+        <!-- Package Description -->
+        <Description>UnoApp1 powered by Uno Platform.</Description>
+
+        <!--
+          UnoFeatures let's you quickly add and manage implicit package references based on the features you want to use.
+          https://aka.platform.uno/singleproject-features
+        -->
+        <UnoFeatures>
+            Material;
+            Hosting;
+            Mvvm;
+            ThemeService;
+            Toolkit;
+        </UnoFeatures>
+        <PackageId>CarreraConnect.Uno</PackageId>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)'=='Debug' or '$(IsUiAutomationMappingEnabled)'=='True'">
+        <IsUiAutomationMappingEnabled>True</IsUiAutomationMappingEnabled>
+        <DefineConstants>$(DefineConstants);USE_UITESTS</DefineConstants>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Splat" />
+      <PackageReference Include="Splat.Drawing" />
+      <PackageReference Include="Splat.TransportLogger" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <MauiXaml Include="Pages\Authentication\LoginPage.xaml">
+        <IsDefaultItem>true</IsDefaultItem>
+      </MauiXaml>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Pages\Registration\RegisterHomePage.xaml.cs">
+        <DependentUpon>HomeControlPage.xaml</DependentUpon>
+        <IsDefaultItem>true</IsDefaultItem>
+      </Compile>
+    </ItemGroup>
+
+</Project>

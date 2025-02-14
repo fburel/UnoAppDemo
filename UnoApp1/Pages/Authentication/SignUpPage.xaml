@@ -1,0 +1,55 @@
+<Page xmlns:utu="using:Uno.Toolkit.UI" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      x:Class="UnoApp1.Pages.Authentication.SignUpPage" mc:Ignorable="d" Background="{ThemeResource BackgroundBrush}" NavigationCacheMode="Required" utu:StatusBar.Foreground="Light" utu:StatusBar.Background="{ThemeResource SurfaceBrush}" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:system="clr-namespace:System;assembly=System.Runtime">
+  <Page.Resources>
+    <system:String x:Key="Icon_Format_ArrowLeft_Weight_Regular">F1 M 18.00058937072754 7.500416517257737 C 18.00058937072754 7.699328879287207 17.92157230898738 7.8900948701421605 17.780920028686523 8.030747141501083 C 17.640267748385668 8.171399412860005 17.449501745402813 8.250416469576676 17.25058937072754 8.250416469576676 L 2.5609025359153748 8.250416469576676 L 8.03121542930603 13.719791493795505 C 8.100898096337914 13.78947415639733 8.156173339113593 13.872199718881257 8.193885326385498 13.963244504135911 C 8.231597313657403 14.054289289390566 8.251007080078125 14.151870639950696 8.251007080078125 14.250416803383887 C 8.251007080078125 14.348962966817078 8.231597313657403 14.446544317377207 8.193885326385498 14.53758910263186 C 8.156173339113593 14.628633887886515 8.100898096337914 14.711359450370441 8.03121542930603 14.781042112972267 C 7.961532762274146 14.850724775574093 7.878807194530964 14.905999299579971 7.787762403488159 14.943711284454347 C 7.6967176124453545 14.981423269328722 7.599136255681515 15.000834465026854 7.500590085983276 15.000834465026855 C 7.402043916285038 15.000834465026854 7.304462559521198 14.981423269328722 7.2134177684783936 14.943711284454347 C 7.122372977435589 14.905999299579971 7.039647409692407 14.850724775574093 6.9699647426605225 14.781042112972267 L 0.2199649214744568 8.031041826846119 C 0.15023258328437805 7.961387025688664 0.09491343051195145 7.878670269790443 0.057170212268829346 7.787621718267536 C 0.019426994025707245 7.696573166744629 6.661338147750939e-16 7.598978125743523 0 7.500416517257737 C 6.661338147750939e-16 7.40185490877195 0.019426994025707245 7.304259867770844 0.057170212268829346 7.2132113162479365 C 0.09491343051195145 7.122162764725029 0.15023258328437805 7.039446008826809 0.2199649214744568 6.9697912076693544 L 6.9699647426605225 0.21979199442674208 C 7.110695242881775 0.07906150315239557 7.301567114889622 -1.4828364259681048e-9 7.500590085983276 0 C 7.699613057076931 1.4828370921018774e-9 7.890484929084778 0.07906150315239557 8.03121542930603 0.21979199442674208 C 8.171945929527283 0.3605224857010886 8.251007078595286 0.5513939879464584 8.251007080078125 0.7504169463872781 C 8.251007081560962 0.9494399048280977 8.171945929527283 1.1403114070734677 8.03121542930603 1.2810418983478142 L 2.5609025359153748 6.750416564938797 L 17.25058937072754 6.750416564938797 C 17.449501745402813 6.750416564938797 17.640267748385668 6.8294343369111585 17.780920028686523 6.970086608270081 C 17.92157230898738 7.110738879629003 18.00058937072754 7.301504155228266 18.00058937072754 7.500416517257737 Z</system:String>
+  </Page.Resources>
+  <utu:AutoLayout Background="{ThemeResource BackgroundBrush}" CounterAxisAlignment="Start">
+    <utu:AutoLayout utu:AutoLayout.CounterAlignment="Stretch" utu:AutoLayout.PrimaryAlignment="Stretch">
+      <utu:NavigationBar HorizontalContentAlignment="Left" Content="Création du compte">
+        <utu:NavigationBar.MainCommand>
+          <AppBarButton>
+            <AppBarButton.Icon>
+              <PathIcon Data="{StaticResource Icon_Format_ArrowLeft_Weight_Regular}" Foreground="{ThemeResource OnSurfaceBrush}" />
+            </AppBarButton.Icon>
+          </AppBarButton>
+        </utu:NavigationBar.MainCommand>
+      </utu:NavigationBar>
+      <ScrollViewer utu:AutoLayout.PrimaryAlignment="Stretch">
+        <utu:AutoLayout Spacing="32" Padding="15,16">
+          <utu:AutoLayout Spacing="8" CounterAxisAlignment="Start">
+            <TextBlock Text="Bienvenue sur Econergy" Foreground="{ThemeResource OnSurfaceBrush}" Style="{StaticResource TitleMedium}" />
+            <TextBlock TextWrapping="Wrap" Text="Merci de remplir les données de votre profil pour commencer." utu:AutoLayout.CounterAlignment="Stretch" Foreground="{ThemeResource OnSurfaceBrush}" />
+          </utu:AutoLayout>
+          <utu:AutoLayout Spacing="8">
+            <utu:AutoLayout Spacing="4" CounterAxisAlignment="Start">
+              <TextBlock Text="Adresse e-mail" Foreground="{ThemeResource OnSurfaceBrush}" />
+              <TextBox  Text="{x:Bind ViewModel.Email, Mode=TwoWay}" utu:AutoLayout.CounterAlignment="Stretch" BorderBrush="{ThemeResource OutlineVariantBrush}" />
+            </utu:AutoLayout>
+            <utu:AutoLayout Spacing="4" CounterAxisAlignment="Start">
+              <TextBlock Text="Nom" Foreground="{ThemeResource OnSurfaceBrush}" />
+              <TextBox Text="{x:Bind ViewModel.LastName, Mode=TwoWay}" utu:AutoLayout.CounterAlignment="Stretch" BorderBrush="{ThemeResource OutlineVariantBrush}" />
+            </utu:AutoLayout>
+            <utu:AutoLayout Spacing="4" CounterAxisAlignment="Start">
+              <TextBlock Text="Prénom" Foreground="{ThemeResource OnSurfaceBrush}" />
+              <TextBox Text="{x:Bind ViewModel.FirstName, Mode=TwoWay}" utu:AutoLayout.CounterAlignment="Stretch" BorderBrush="{ThemeResource OutlineVariantBrush}" />
+            </utu:AutoLayout>
+          </utu:AutoLayout>
+          <utu:AutoLayout Spacing="8">
+            <utu:AutoLayout Spacing="4" CounterAxisAlignment="Start">
+              <TextBlock Text="Mot de passe" Foreground="{ThemeResource OnSurfaceBrush}" />
+              <PasswordBox Text="{x:Bind ViewModel.Password, Mode=TwoWay}" Padding="12,10" utu:AutoLayout.CounterAlignment="Stretch" BorderBrush="{ThemeResource OutlineVariantBrush}" />
+            </utu:AutoLayout>
+            <utu:AutoLayout Spacing="4" CounterAxisAlignment="Start">
+              <TextBlock Text="Confirmation du mot de passe" Foreground="{ThemeResource OnSurfaceBrush}" />
+              <PasswordBox Text="{x:Bind ViewModel.ConfirmationPassword, Mode=TwoWay}" Padding="12,10" utu:AutoLayout.CounterAlignment="Stretch" BorderBrush="{ThemeResource OutlineVariantBrush}" />
+            </utu:AutoLayout>
+          </utu:AutoLayout>
+          <utu:AutoLayout CornerRadius="0.5" PrimaryAxisAlignment="End" CounterAxisAlignment="End" Padding="0,8" utu:AutoLayout.PrimaryAlignment="Stretch">
+            <Button Command="{x:Bind ViewModel.SignUpCommand}" Content="Envoyer le code de vérification" CornerRadius="8" />
+          </utu:AutoLayout>
+        </utu:AutoLayout>
+      </ScrollViewer>
+    </utu:AutoLayout>
+  </utu:AutoLayout>
+</Page>

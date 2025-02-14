@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="Unoapp1.app/Unoapp1">
+      <IsAppExtension>false</IsAppExtension>
+      <BCSymbolMapName>Unoapp1.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>false</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>false</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>Unoapp1.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/fl0/Desktop/UnoAppDemo/UnoApp1/obj/Debug/net8.0-ios/ios-arm64/mtouch-symbols.list</SymbolFile>
+      <DSymName>Unoapp1.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/fl0/Desktop/UnoAppDemo/UnoApp1</SourceProjectPath>
+      <IsXPCService></IsXPCService>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

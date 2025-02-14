@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign D3EDE56EA2C3580E99D204601E5DC083CEACF9BF --entitlements /Users/fl0/Desktop/UnoAppDemo/UnoApp1/obj/Debug/net8.0-ios/ios-arm64/Entitlements.xcent /Users/fl0/Desktop/UnoAppDemo/UnoApp1/bin/Debug/net8.0-ios/ios-arm64/Unoapp1.app
